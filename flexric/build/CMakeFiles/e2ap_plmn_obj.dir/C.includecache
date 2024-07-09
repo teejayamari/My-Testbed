@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chatbot/research_project/flexric/src/lib/e2ap/v2_03/e2ap_types/common/e2ap_plmn.c
+e2ap_plmn.h
+/home/chatbot/research_project/flexric/src/lib/e2ap/v2_03/e2ap_types/common/e2ap_plmn.h
+assert.h
+-
+stddef.h
+-
+
+/home/chatbot/research_project/flexric/src/lib/e2ap/v2_03/e2ap_types/common/e2ap_plmn.h
+stdbool.h
+-
+stdint.h
+-
+

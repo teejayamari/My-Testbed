@@ -1,0 +1,18 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_en_gnb.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_enb.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_global_enb_id.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_global_gnb_id.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_global_ng_enb.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_global_ng_ran.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_gnb.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_gnb_cu_up.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_gnb_du.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_ng_enb.c.o"
+  "CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/dec_ng_enb_du.c.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/3gpp_derived_ie_dec_asn_obj.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

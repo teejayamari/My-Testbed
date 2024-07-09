@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chatbot/research_project/flexric/src/lib/e2ap/v2_03/e2ap_types/common/e2ap_ran_function.c
+e2ap_ran_function.h
+/home/chatbot/research_project/flexric/src/lib/e2ap/v2_03/e2ap_types/common/e2ap_ran_function.h
+assert.h
+-
+stdlib.h
+-
+
+/home/chatbot/research_project/flexric/src/lib/e2ap/v2_03/e2ap_types/common/e2ap_ran_function.h
+../../../../../util/byte_array.h
+/home/chatbot/research_project/flexric/src/util/byte_array.h
+stdbool.h
+-
+stdint.h
+-
+
+/home/chatbot/research_project/flexric/src/util/byte_array.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+string.h
+-
+

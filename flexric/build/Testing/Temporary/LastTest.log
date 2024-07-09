@@ -1,0 +1,2584 @@
+Start testing: Jul 02 15:04 EDT
+----------------------------------------------------------
+2/13 Testing: Unit_test_near_ric
+2/13 Test: Unit_test_near_ric
+Command: "/home/chatbot/research_project/flexric/build/test/agent-ric/test_near_ric"
+Directory: /home/chatbot/research_project/flexric/build/test/agent-ric
+"Unit_test_near_ric" start time: Jul 02 15:04 EDT
+Output:
+----------------------------------------------------------
+[UTIL]: Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+[UTIL]: Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[NEAR-RIC]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36421
+[NEAR-RIC]: Initializing 
+[NEAR-RIC]: Loading SM ID = 2 with def = ORAN-E2SM-KPM-v02.03 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 3 with def = ORAN-E2SM-RC-v01.0 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[iApp]: Initializing ... 
+[iApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[NEAR-RIC]: Initializing Task Manager with 2 threads 
+[E2 AGENT]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36421, RAN type = ngran_gNB, nb_id = 42
+[E2 AGENT]: Initializing ... 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2-AGENT]: E2 SETUP-REQUEST tx 
+[E2AP]: E2 SETUP-REQUEST rx from PLMN 208.92 Node ID 42 RAN type ngran_gNB
+[NEAR-RIC]: Accepting RAN function ID 2 with def = ORAN-E2SM-KPM-v02.03 
+[NEAR-RIC]: Accepting RAN function ID 3 with def = ORAN-E2SM-RC-v01.0 
+[NEAR-RIC]: Accepting RAN function ID 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 143 with def = RLC_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 148 with def = GTP_STATS_V0 
+[E2-AGENT]: E2 SETUP RESPONSE rx
+[E2-AGENT]: Transaction ID E2 SETUP-REQUEST 0 E2 SETUP-RESPONSE 0 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 142 RIC_REQ_ID 1021
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[NEAR-RIC]: Report Service Asked from nb_id = 42 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 143 RIC_REQ_ID 1022
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 144 RIC_REQ_ID 1023
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[NEAR-RIC]: CONTROL SERVICE sent
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 145 RIC_REQ_ID 1024
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 146 RIC_REQ_ID 1025
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 148 RIC_REQ_ID 1026
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 2 RIC_REQ_ID 1027
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 3 RIC_REQ_ID 1028
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+RAN_CONTROL_CTRL_V1_03 message called in the RAN 
+[E2-AGENT]: CONTROL ACKNOWLEDGE tx
+[NEAR-RIC]: CONTROL ACKNOWLEDGE rx
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 142  RIC_REQ_ID 1021  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 143  RIC_REQ_ID 1022  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 144  RIC_REQ_ID 1023  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 145  RIC_REQ_ID 1024  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 146  RIC_REQ_ID 1025  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 148  RIC_REQ_ID 1026  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 2  RIC_REQ_ID 1027  
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 3  RIC_REQ_ID 1028  
+ag->agent_stopped = true 
+[E2AP]: SCTP_SHUTDOWN_EVENT 
+[NEAR-RIC]: Removing E2 Node MCC 208 MNC 92 NB_ID 42 
+Test communicating E2-Agent and Near-RIC run SUCCESSFULLY
+<end of output>
+Test time =   7.23 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_near_ric" end time: Jul 02 15:04 EDT
+"Unit_test_near_ric" time elapsed: 00:00:07
+----------------------------------------------------------
+
+1/13 Testing: Unit_test_ag_ric_xapp
+1/13 Test: Unit_test_ag_ric_xapp
+Command: "/home/chatbot/research_project/flexric/build/test/agent-ric-xapp/test_ag_ric_xapp"
+Directory: /home/chatbot/research_project/flexric/build/test/agent-ric-xapp
+"Unit_test_ag_ric_xapp" start time: Jul 02 15:04 EDT
+Output:
+----------------------------------------------------------
+[UTIL]: Setting the config -c file to /usr/local/etc/flexric/flexric.conf
+[UTIL]: Setting path -p for the shared libraries to /usr/local/lib/flexric/
+[NEAR-RIC]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36421
+[NEAR-RIC]: Initializing 
+[NEAR-RIC]: Loading SM ID = 2 with def = ORAN-E2SM-KPM-v02.03 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 3 with def = ORAN-E2SM-RC-v01.0 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[iApp]: Initializing ... 
+[iApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[NEAR-RIC]: Initializing Task Manager with 2 threads 
+[E2 AGENT]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36421, RAN type = ngran_gNB, nb_id = 42
+[E2 AGENT]: Initializing ... 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[E2-AGENT]: E2 SETUP-REQUEST tx 
+[E2AP]: E2 SETUP-REQUEST rx from PLMN 208.92 Node ID 42 RAN type ngran_gNB
+[NEAR-RIC]: Accepting RAN function ID 2 with def = ORAN-E2SM-KPM-v02.03 
+[NEAR-RIC]: Accepting RAN function ID 3 with def = ORAN-E2SM-RC-v01.0 
+[NEAR-RIC]: Accepting RAN function ID 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 143 with def = RLC_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 144 with def = PDCP_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Accepting RAN function ID 148 with def = GTP_STATS_V0 
+[E2-AGENT]: E2 SETUP RESPONSE rx
+[E2-AGENT]: Transaction ID E2 SETUP-REQUEST 0 E2 SETUP-RESPONSE 0 
+[xAapp]: Initializing ... 
+[xApp]: nearRT-RIC IP Address = 127.0.0.1, PORT = 36422
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libkpm_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libmac_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libtc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libslice_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/librlc_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libgtp_sm.so 
+[E2 AGENT]: Opening plugin from path = /usr/local/lib/flexric/libpdcp_sm.so 
+[NEAR-RIC]: Loading SM ID = 2 with def = ORAN-E2SM-KPM-v02.03 
+[NEAR-RIC]: Loading SM ID = 142 with def = MAC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 3 with def = ORAN-E2SM-RC-v01.0 
+[NEAR-RIC]: Loading SM ID = 146 with def = TC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 145 with def = SLICE_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 143 with def = RLC_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 148 with def = GTP_STATS_V0 
+[NEAR-RIC]: Loading SM ID = 144 with def = PDCP_STATS_V0 
+[xApp]: DB filename = /tmp/xapp_db 
+ [xApp]: E42 SETUP-REQUEST tx
+[iApp]: E42 SETUP-REQUEST rx
+[iApp]: E42 SETUP-RESPONSE tx
+[xApp]: E42 SETUP-RESPONSE rx 
+[xApp]: xApp ID = 7 
+[xApp]: Registered E2 Nodes = 1 
+Connected E2 nodes = 1
+Registered ran func id = 2 
+ Registered ran func id = 3 
+ Registered ran func id = 142 
+ Registered ran func id = 143 
+ Registered ran func id = 144 
+ Registered ran func id = 145 
+ Registered ran func id = 146 
+ Registered ran func id = 148 
+ [xApp]: E42 RIC SUBSCRIPTION REQUEST tx RAN_FUNC_ID 142 RIC_REQ_ID 1 
+[iApp]: SUBSCRIPTION-REQUEST RAN_FUNC_ID 142 RIC_REQ_ID 1 tx 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 142 RIC_REQ_ID 1021
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[xApp]: SUBSCRIPTION RESPONSE rx
+[xApp]: Successfully subscribed to RAN_FUNC_ID 142 
+[xApp]: E42 RIC SUBSCRIPTION REQUEST tx RAN_FUNC_ID 143 RIC_REQ_ID 2 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 143 RIC_REQ_ID 1022
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[iApp]: SUBSCRIPTION-REQUEST RAN_FUNC_ID 143 RIC_REQ_ID 2 tx 
+[xApp]: SUBSCRIPTION RESPONSE rx
+[xApp]: Successfully subscribed to RAN_FUNC_ID 143 
+[xApp]: E42 RIC SUBSCRIPTION REQUEST tx RAN_FUNC_ID 148 RIC_REQ_ID 3 
+[iApp]: SUBSCRIPTION-REQUEST RAN_FUNC_ID 148 RIC_REQ_ID 3 tx 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 148 RIC_REQ_ID 1023
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[xApp]: SUBSCRIPTION RESPONSE rx
+[xApp]: Successfully subscribed to RAN_FUNC_ID 148 
+[xApp]: CONTROL-REQUEST tx 
+[NEAR-RIC]: CONTROL SERVICE sent
+[iApp]: E42_RIC_CONTROL_REQUEST rx
+[E2 Agent]: SLICE CONTROL ADD rx
+[E2-AGENT]: CONTROL ACKNOWLEDGE tx
+[NEAR-RIC]: CONTROL ACKNOWLEDGE rx
+[iApp]: RIC_CONTROL_ACKNOWLEDGE tx
+[xApp]: CONTROL ACK rx
+[xApp]: Successfully received CONTROL-ACK 
+[NEAR-RIC]: CONTROL SERVICE sent
+[iApp]: E42_RIC_CONTROL_REQUEST rx
+[E2 Agent]: SLICE CONTROL ASSOC rx
+[E2-AGENT]: CONTROL ACKNOWLEDGE tx
+[xApp]: CONTROL-REQUEST tx 
+[NEAR-RIC]: CONTROL ACKNOWLEDGE rx
+[iApp]: RIC_CONTROL_ACKNOWLEDGE tx
+[xApp]: CONTROL ACK rx
+[xApp]: Successfully received CONTROL-ACK 
+[xApp]: E42 RIC SUBSCRIPTION REQUEST tx RAN_FUNC_ID 2 RIC_REQ_ID 6 
+[iApp]: SUBSCRIPTION-REQUEST RAN_FUNC_ID 2 RIC_REQ_ID 6 tx 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 2 RIC_REQ_ID 1026
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[xApp]: SUBSCRIPTION RESPONSE rx
+[xApp]: Successfully subscribed to RAN_FUNC_ID 2 
+[xApp]: CONTROL-REQUEST tx 
+[NEAR-RIC]: CONTROL SERVICE sent
+[iApp]: E42_RIC_CONTROL_REQUEST rx
+RAN_CONTROL_CTRL_V1_03 message called in the RAN 
+[E2-AGENT]: CONTROL ACKNOWLEDGE tx
+[NEAR-RIC]: CONTROL ACKNOWLEDGE rx
+[iApp]: RIC_CONTROL_ACKNOWLEDGE tx
+[xApp]: CONTROL ACK rx
+[xApp]: Successfully received CONTROL-ACK 
+[xApp]: E42 RIC SUBSCRIPTION REQUEST tx RAN_FUNC_ID 3 RIC_REQ_ID 8 
+[iApp]: SUBSCRIPTION-REQUEST RAN_FUNC_ID 3 RIC_REQ_ID 8 tx 
+[E2 AGENT]: RIC_SUBSCRIPTION_REQUEST rx RAN_FUNC_ID 3 RIC_REQ_ID 1028
+[E2-AGENT]: RIC_SUBSCRIPTION_REQUEST rx
+[xApp]: SUBSCRIPTION RESPONSE rx
+Event for RIC Req ID 1028 generated
+[xApp]: Successfully subscribed to RAN_FUNC_ID 3 
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+MAC ind_msg latency = 361 μs
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RLC ind_msg latency = 156 μs
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+GTP ind_msg latency = 457 μs
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+Event for RIC Req ID 1028 generated
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+RAN Control Indication data arrived
+MAC ind_msg latency = 266 μs
+RLC ind_msg latency = 135 μs
+GTP ind_msg latency = 351 μs
+MAC ind_msg latency = 959 μs
+GTP ind_msg latency = 847 μs
+RLC ind_msg latency = 876 μs
+MAC ind_msg latency = 191 μs
+RLC ind_msg latency = 167 μs
+GTP ind_msg latency = 158 μs
+MAC ind_msg latency = 248 μs
+RLC ind_msg latency = 214 μs
+GTP ind_msg latency = 190 μs
+[xApp]: E42 RIC_SUBSCRIPTION_DELETE_REQUEST tx RAN_FUNC_ID 142 RIC_REQ_ID 1 
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx RAN FUNC ID 142 RIC_REQ_ID 1021 
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST tx RIC_REQ_ID 1021 
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 142  RIC_REQ_ID 1021  
+[xApp]: E42 SUBSCRIPTION DELETE RESPONSE rx
+[xApp]: E42 RIC_SUBSCRIPTION_DELETE_REQUEST tx RAN_FUNC_ID 143 RIC_REQ_ID 2 
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE tx RAN_FUNC_ID 142 RIC_REQ_ID 1 
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx RAN FUNC ID 143 RIC_REQ_ID 1022 
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST tx RIC_REQ_ID 1022 
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 143  RIC_REQ_ID 1022  
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE tx RAN_FUNC_ID 143 RIC_REQ_ID 2 
+[xApp]: E42 SUBSCRIPTION DELETE RESPONSE rx
+[xApp]: E42 RIC_SUBSCRIPTION_DELETE_REQUEST tx RAN_FUNC_ID 148 RIC_REQ_ID 3 
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx RAN FUNC ID 148 RIC_REQ_ID 1023 
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST tx RIC_REQ_ID 1023 
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 148  RIC_REQ_ID 1023  
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE tx RAN_FUNC_ID 148 RIC_REQ_ID 3 
+[xApp]: E42 SUBSCRIPTION DELETE RESPONSE rx
+[xApp]: E42 RIC_SUBSCRIPTION_DELETE_REQUEST tx RAN_FUNC_ID 2 RIC_REQ_ID 6 
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx RAN FUNC ID 2 RIC_REQ_ID 1026 
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST tx RIC_REQ_ID 1026 
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 2  RIC_REQ_ID 1026  
+[xApp]: E42 SUBSCRIPTION DELETE RESPONSE rx
+[xApp]: E42 RIC_SUBSCRIPTION_DELETE_REQUEST tx RAN_FUNC_ID 3 RIC_REQ_ID 8 
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE tx RAN_FUNC_ID 2 RIC_REQ_ID 6 
+[NEAR-RIC]: SUBSCRIPTION DELETE REQUEST tx RAN FUNC ID 3 RIC_REQ_ID 1028 
+[iApp]: RIC_SUBSCRIPTION_DELETE_REQUEST tx RIC_REQ_ID 1028 
+[E2-AGENT]: RIC_SUBSCRIPTION_DELETE_REQUEST rx RAN_FUNC_ID 3  RIC_REQ_ID 1028  
+[iApp]: RIC_SUBSCRIPTION_DELETE_RESPONSE tx RAN_FUNC_ID 3 RIC_REQ_ID 8 
+[xApp]: E42 SUBSCRIPTION DELETE RESPONSE rx
+[xApp]: Sucessfully stopped 
+ag->agent_stopped = true 
+[E2AP]: SCTP_SHUTDOWN_EVENT 
+[NEAR-RIC]: Removing E2 Node MCC 208 MNC 92 NB_ID 42 
+Test communicating E2-Agent, Near-RIC and xApp run SUCCESSFULLY
+<end of output>
+Test time =  11.03 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_ag_ric_xapp" end time: Jul 02 15:05 EDT
+"Unit_test_ag_ric_xapp" time elapsed: 00:00:11
+----------------------------------------------------------
+
+3/13 Testing: Unit_test_e2ap_v2
+3/13 Test: Unit_test_e2ap_v2
+Command: "/home/chatbot/research_project/flexric/build/test/encode_decode/e2ap/v2_03/test_e2ap_enc_dec_asn"
+Directory: /home/chatbot/research_project/flexric/build/test/encode_decode/e2ap/v2_03
+"Unit_test_e2ap_v2" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Sucess running the encoding/decoding test
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_e2ap_v2" end time: Jul 02 15:05 EDT
+"Unit_test_e2ap_v2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/13 Testing: Unit_test_enc_dec_kpm_sm_v02.03
+4/13 Test: Unit_test_enc_dec_kpm_sm_v02.03
+Command: "/home/chatbot/research_project/flexric/build/test/encode_decode/sm/kpm/kpm_sm_v02.03/test_enc_dec_kpm_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/encode_decode/sm/kpm/kpm_sm_v02.03
+"Unit_test_enc_dec_kpm_sm_v02.03" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+KPM SM enc/dec test launched
+KPM Event Trigger test succeeded
+KPM Action Definition test succeeded
+KPM Indication Header test succeeded
+KPM Indication Message test succeeded
+KPM SM enc/dec test succeeded
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_enc_dec_kpm_sm_v02.03" end time: Jul 02 15:05 EDT
+"Unit_test_enc_dec_kpm_sm_v02.03" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/13 Testing: Unit_test_enc_dec_rc_sm
+5/13 Test: Unit_test_enc_dec_rc_sm
+Command: "/home/chatbot/research_project/flexric/build/test/encode_decode/sm/rc/test_enc_dec_rc_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/encode_decode/sm/rc
+"Unit_test_enc_dec_rc_sm" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+
+RC SM enc/dec test launched
+
+RC Event Trigger test succeeded
+
+RC Action Definition test succeeded
+
+RC Indication Header test succeeded
+
+RC Indication Message test succeeded
+
+RC Call Process ID
+
+RC Control Header 
+
+RC Control Message
+
+RC Control Outcome
+
+RC RAN Function Definition
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_enc_dec_rc_sm" end time: Jul 02 15:05 EDT
+"Unit_test_enc_dec_rc_sm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/13 Testing: Unit_test_MAC
+6/13 Test: Unit_test_MAC
+Command: "/home/chatbot/research_project/flexric/build/test/sm/mac_sm/test_mac_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/mac_sm
+"Unit_test_MAC" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Success
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_MAC" end time: Jul 02 15:05 EDT
+"Unit_test_MAC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/13 Testing: Unit_test_RLC
+7/13 Test: Unit_test_RLC
+Command: "/home/chatbot/research_project/flexric/build/test/sm/rlc_sm/test_rlc_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/rlc_sm
+"Unit_test_RLC" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Success
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_RLC" end time: Jul 02 15:05 EDT
+"Unit_test_RLC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/13 Testing: Unit_test_PDCP
+8/13 Test: Unit_test_PDCP
+Command: "/home/chatbot/research_project/flexric/build/test/sm/pdcp_sm/test_pdcp_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/pdcp_sm
+"Unit_test_PDCP" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Success
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_PDCP" end time: Jul 02 15:05 EDT
+"Unit_test_PDCP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/13 Testing: Unit_test_SLICE
+9/13 Test: Unit_test_SLICE
+Command: "/home/chatbot/research_project/flexric/build/test/sm/slice_sm/test_slice_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/slice_sm
+"Unit_test_SLICE" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Success
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_SLICE" end time: Jul 02 15:05 EDT
+"Unit_test_SLICE" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/13 Testing: Unit_test_TC
+10/13 Test: Unit_test_TC
+Command: "/home/chatbot/research_project/flexric/build/test/sm/tc_sm/test_tc_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/tc_sm
+"Unit_test_TC" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Traffic Control SM run with success
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_TC" end time: Jul 02 15:05 EDT
+"Unit_test_TC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/13 Testing: Unit_test_GTP
+11/13 Test: Unit_test_GTP
+Command: "/home/chatbot/research_project/flexric/build/test/sm/gtp_sm/test_gtp_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/gtp_sm
+"Unit_test_GTP" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Success
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_GTP" end time: Jul 02 15:05 EDT
+"Unit_test_GTP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/13 Testing: Unit_test_RC
+12/13 Test: Unit_test_RC
+Command: "/home/chatbot/research_project/flexric/build/test/sm/rc_sm/test_rc_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/rc_sm
+"Unit_test_RC" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Running RAN Control SM test. Patience. 
+RAN Control (RC-SM) version 1.3 Release 3 run with success
+<end of output>
+Test time =   0.62 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_RC" end time: Jul 02 15:05 EDT
+"Unit_test_RC" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/13 Testing: Unit_test_KPM
+13/13 Test: Unit_test_KPM
+Command: "/home/chatbot/research_project/flexric/build/test/sm/kpm_sm/kpm_sm_v02.03/test_kpm_sm"
+Directory: /home/chatbot/research_project/flexric/build/test/sm/kpm_sm/kpm_sm_v02.03
+"Unit_test_KPM" start time: Jul 02 15:05 EDT
+Output:
+----------------------------------------------------------
+Key Performance Metric (KPM-SM) version 2.0 Release 3 run with success
+<end of output>
+Test time =   0.15 sec
+----------------------------------------------------------
+Test Passed.
+"Unit_test_KPM" end time: Jul 02 15:05 EDT
+"Unit_test_KPM" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 02 15:05 EDT

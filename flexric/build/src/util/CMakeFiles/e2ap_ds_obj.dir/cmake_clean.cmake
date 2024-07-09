@@ -1,0 +1,16 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/assoc_container/assoc_rb_tree.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/assoc_container/assoc_reg.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/assoc_container/bimap.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/seq_container/seq_arr.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/seq_container/seq_ring.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/task_man/task_manager.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/tsn_queue/tsn_queue.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/alg_ds/ds/tsq/tsq.c.o"
+  "CMakeFiles/e2ap_ds_obj.dir/byte_array.c.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/e2ap_ds_obj.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
