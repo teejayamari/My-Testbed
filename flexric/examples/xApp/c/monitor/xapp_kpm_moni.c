@@ -10,7 +10,7 @@
  *      http://www.openairinterface.org/?page_id=698
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BAS
+ * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -98,7 +98,7 @@ void sm_cb_kpm(sm_ag_if_rd_t const* rd)
               // Get the Measurement Name
               char meas_info_name_str[msg_frm_1->meas_info_lst[z].meas_type.name.len + 1];
               memcpy(meas_info_name_str, msg_frm_1->meas_info_lst[z].meas_type.name.buf, msg_frm_1->meas_info_lst[z].meas_type.name.len);
-              meas_info_name_str[msg_frm_1->meas_info_lst[z].meas_type.name.len] = '\0';
+              meas_info_name_str[msg_frm_1->meas_type.name.len] = '\0';
 
               // Get the value of the Measurement
               switch (msg_frm_1->meas_data_lst[j].meas_record_lst[z].value)
@@ -388,4 +388,3 @@ int main(int argc, char *argv[])
 
   printf("Test xApp run SUCCESSFULLY\n");
 }
-

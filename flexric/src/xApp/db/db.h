@@ -51,4 +51,3 @@ void close_db_xapp(db_xapp_t* db);
 void write_db_xapp(db_xapp_t* db, global_e2_node_id_t const* id, sm_ag_if_rd_t const* rd);
 
 #endif
-
