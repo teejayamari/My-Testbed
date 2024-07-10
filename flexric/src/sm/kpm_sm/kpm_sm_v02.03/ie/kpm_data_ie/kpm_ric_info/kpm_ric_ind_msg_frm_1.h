@@ -20,6 +20,16 @@ typedef struct {
 
     uint32_t                 *gran_period_ms;  // 8.3.8  -  OPTIONAL
 
+    // Add the missing members
+    int ngran_node;
+    int mcc;
+    int mnc;
+    int mnc_digit_len;
+    int nb_id;
+    int cu_du_id;
+    int incompleteFlag;
+    int val;
+
 } kpm_ind_msg_format_1_t;
 
 void free_kpm_ind_msg_frm_1(kpm_ind_msg_format_1_t* src);

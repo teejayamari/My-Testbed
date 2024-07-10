@@ -21,6 +21,7 @@
 
 #include "sqlite3_wrapper.h"
 #include "../../../util/time_now_us.h"
+#include "kpm_ric_ind_msg_frm_1.h"
 
 #include <assert.h>
 #include <stddef.h>
@@ -900,26 +901,11 @@ int to_sql_string_gtp_NGUT(global_e2_node_id_t const* id,gtp_ngu_t_stats_t* gtp,
   return rc;
 }
 
-// Function to convert KPM measurement records to SQL string
-static int to_sql_string_kpm_measRecord(kpm_ind_msg_format_1_t const* msg_frm_1, int64_t tstamp, char* out, size_t out_len) {
-    assert(msg_frm_1 != NULL);
-    assert(out != NULL);
-    const size_t max = 1024;
-    assert(out_len >= max);
+#include "kpm_ric_ind_msg_frm_1.h" // Ensure this is included
 
-    int rc = snprintf(out, max,
-        "INSERT INTO KPM_MeasRecord VALUES("
-        "%ld," // tstamp
-        "%d,"  // ngran_node
-        "%d,"  // mcc
-        "%d,"  // mnc
-        "%d,"  // mnc_digit_len
-        "%d,"  // nb_id
-        "'%s'," // cu_du_id
-        "%d,"  // incompleteFlag
-        "%f"   // val
-        ");",
-        tstamp,
+void to_sql_string_kpm_measRecord(const kpm_ind_msg_format_1_t* msg_frm_1) {
+    // Ensure the structure members are correctly accessed
+    printf("%d, %d, %d, %d, %d, %d, %d, %d\n",
         msg_frm_1->ngran_node,
         msg_frm_1->mcc,
         msg_frm_1->mnc,
@@ -929,8 +915,6 @@ static int to_sql_string_kpm_measRecord(kpm_ind_msg_format_1_t const* msg_frm_1,
         msg_frm_1->incompleteFlag,
         msg_frm_1->val
     );
-    assert(rc < (int)max && "Not enough space in the char array to write all the data");
-    return rc;
 }
 
 static

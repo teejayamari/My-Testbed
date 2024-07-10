@@ -310,14 +310,6 @@ kpm_ric_ind_msg.h
 ../../../../../../lib/sm/ie/ran_function_name.h
 /home/chatbot/research_project/flexric/src/lib/sm/ie/ran_function_name.h
 
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def.c
-assert.h
--
-stdlib.h
--
-kpm_ric_action_def.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def.h
-
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def.h
 stdint.h
 -
@@ -333,16 +325,6 @@ kpm_ric_action_def_frm_4.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.h
 kpm_ric_action_def_frm_5.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.h
-
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.c
-assert.h
--
-stdlib.h
--
-stdio.h
--
-kpm_ric_action_def_frm_1.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.h
 
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.h
 stdlib.h
@@ -356,18 +338,6 @@ stdint.h
 ../../../../../../lib/sm/ie/cell_global_id.h
 /home/chatbot/research_project/flexric/src/lib/sm/ie/cell_global_id.h
 
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_2.c
-assert.h
--
-stdlib.h
--
-stdio.h
--
-kpm_ric_action_def_frm_2.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_2.h
-kpm_ric_action_def_frm_1.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.h
-
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_2.h
 stdlib.h
 -
@@ -379,12 +349,6 @@ stdbool.h
 /home/chatbot/research_project/flexric/src/lib/sm/ie/ue_id.h
 kpm_ric_action_def_frm_1.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.h
-
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_3.c
-assert.h
--
-kpm_ric_action_def_frm_3.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_3.h
 
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_3.h
 stdlib.h
@@ -396,12 +360,6 @@ stdint.h
 ../../../../../../lib/sm/ie/cell_global_id.h
 /home/chatbot/research_project/flexric/src/lib/sm/ie/cell_global_id.h
 
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.c
-assert.h
--
-kpm_ric_action_def_frm_4.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.h
-
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.h
 stdlib.h
 -
@@ -412,38 +370,14 @@ kpm_ric_action_def_frm_1.h
 ../data/matching_cond_frm_4_lst.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/data/matching_cond_frm_4_lst.h
 
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.c
-assert.h
--
-kpm_ric_action_def_frm_5.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.h
-
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.h
 ../../../../../../lib/sm/ie/ue_id.h
 /home/chatbot/research_project/flexric/src/lib/sm/ie/ue_id.h
 kpm_ric_action_def_frm_1.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.h
 
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.c
-kpm_ric_event_trigger_def.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.h
-assert.h
--
-stdlib.h
--
-
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.h
 stdbool.h
--
-kpm_ric_event_trigger_def_frm_1.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def_frm_1.h
-
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def_frm_1.c
-assert.h
--
-stddef.h
--
-stdlib.h
 -
 kpm_ric_event_trigger_def_frm_1.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def_frm_1.h
@@ -454,25 +388,7 @@ stdint.h
 stdbool.h
 -
 
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.c
-assert.h
--
-stdlib.h
--
-kpm_ric_ind_hdr.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.h
-
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.h
-kpm_ric_ind_hdr_frm_1.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr_frm_1.h
-
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr_frm_1.c
-assert.h
--
-stdlib.h
--
-stdio.h
--
 kpm_ric_ind_hdr_frm_1.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr_frm_1.h
 
@@ -517,12 +433,6 @@ stdlib.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/data/meas_data_lst.h
 ../data/meas_info_frm_1_lst.h
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/data/meas_info_frm_1_lst.h
-
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.c
-assert.h
--
-kpm_ric_ind_msg_frm_2.h
-/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.h
 
 /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.h
 stdlib.h
