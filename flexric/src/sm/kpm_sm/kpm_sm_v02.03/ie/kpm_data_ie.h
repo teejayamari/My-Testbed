@@ -7,6 +7,7 @@
 #include "kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.h"
 #include "kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg.h"
 #include "kpm_data_ie/kpm_ric_info/kpm_call_proc_id.h"
+#include "kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_1.h" // Ensure this is included
 
 // RIC INDICATION
 typedef struct {
@@ -19,7 +20,7 @@ void free_kpm_ind_data(kpm_ind_data_t* ind);
 
 kpm_ind_data_t cp_kpm_ind_data(kpm_ind_data_t const* src);
 
-bool eq_kpm_ind_data(kpm_ind_data_t const* ind0,kpm_ind_data_t const* ind1);
+bool eq_kpm_ind_data(kpm_ind_data_t const* ind0, kpm_ind_data_t const* ind1);
 
 ///////////////
 /// RIC Subscription
@@ -46,4 +47,4 @@ typedef struct {
     kpm_ran_function_def_t ran_func_def;
 } kpm_e2_setup_t;
 
-#endif
+#endif // KPM_V2_03_INFORMATION_ELEMENTS_H

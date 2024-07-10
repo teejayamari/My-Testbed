@@ -32,16 +32,4 @@
 _Static_assert(0, "Unknown KPM version");
 #endif
 
-typedef struct {
-    int ngran_node;
-    int mcc;
-    int mnc;
-    int mnc_digit_len;
-    int nb_id;
-    char cu_du_id[26];
-    int incompleteFlag;
-    double val;
-    // Add other members as needed
-} kpm_ind_msg_format_1_t;
-
 #endif // KPM_DATA_IE_WRAPPER_H
