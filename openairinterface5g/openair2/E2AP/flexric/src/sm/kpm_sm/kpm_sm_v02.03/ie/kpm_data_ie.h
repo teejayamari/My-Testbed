@@ -19,7 +19,7 @@ void free_kpm_ind_data(kpm_ind_data_t* ind);
 
 kpm_ind_data_t cp_kpm_ind_data(kpm_ind_data_t const* src);
 
-bool eq_kpm_ind_data(kpm_ind_data_t const* ind0,kpm_ind_data_t const* ind1);
+bool eq_kpm_ind_data(kpm_ind_data_t const* ind0, kpm_ind_data_t const* ind1);
 
 ///////////////
 /// RIC Subscription
@@ -46,4 +46,17 @@ typedef struct {
     kpm_ran_function_def_t ran_func_def;
 } kpm_e2_setup_t;
 
-#endif
+// Add the missing structure definition
+typedef struct {
+    int ngran_node;
+    int mcc;
+    int mnc;
+    int mnc_digit_len;
+    int nb_id;
+    char cu_du_id[26];
+    int incompleteFlag;
+    double val;
+    // Add other members as needed
+} kpm_ind_msg_format_1_t;
+
+#endif // KPM_V2_03_INFORMATION_ELEMENTS_H
