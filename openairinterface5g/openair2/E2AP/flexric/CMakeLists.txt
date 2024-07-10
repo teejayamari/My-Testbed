@@ -192,7 +192,7 @@ endif()
 #option(IAPP_EMULATOR "iApp emulator" OFF)
 #if(IAPP_EMULATOR)
 #  message(STATUS "iApp emulator ON")
-#endif()
+#endif
 
 
 
@@ -321,6 +321,7 @@ set(UNIT_TEST "TRUE" CACHE STRING "build test cases")
 set_property(CACHE UNIT_TEST PROPERTY STRINGS "TRUE" "FALSE")
 
 include_directories(src)
+include_directories(${CMAKE_SOURCE_DIR}/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info) # Add this line
 add_subdirectory(src)
 add_subdirectory(examples)
 
@@ -384,7 +385,4 @@ add_custom_command(
         TARGET "uninstall"
         POST_BUILD
         COMMENT "Uninstall files with install_manifest.txt"
-        COMMAND xargs rm -vf < install_manifest.txt || echo Nothing in
-        install_manifest.txt to be uninstalled!
-)
-
+        COMMAND xargs rm -vf < install_manifest.txt || echo
