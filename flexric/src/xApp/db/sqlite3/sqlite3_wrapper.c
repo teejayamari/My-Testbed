@@ -900,9 +900,8 @@ int to_sql_string_gtp_NGUT(global_e2_node_id_t const* id,gtp_ngu_t_stats_t* gtp,
   return rc;
 }
 
-#include "kpm_ric_ind_msg_frm_1.h" // Ensure this is included
 
-void to_sql_string_kpm_measRecord(const kpm_ind_msg_format_1_t* msg_frm_1) {
+void to_sql_string_kpm_measRecord(const kpm_ind_msg_format_1_t* msg_frm_1, int64_t tstamp, char* sql, size_t sql_len) {
     // Ensure the structure members are correctly accessed
     printf("%d, %d, %d, %d, %d, %d, %d, %d\n",
         msg_frm_1->ngran_node,
