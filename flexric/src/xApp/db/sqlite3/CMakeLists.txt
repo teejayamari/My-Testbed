@@ -10,4 +10,3 @@ add_library(sqlite3_obj OBJECT
 target_include_directories(sqlite3_obj PUBLIC
     ${CMAKE_SOURCE_DIR}/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info
 )
-
