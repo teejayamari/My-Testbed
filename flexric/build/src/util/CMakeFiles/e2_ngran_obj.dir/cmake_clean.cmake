@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/e2_ngran_obj.dir/ngran_types.c.o"
+  "CMakeFiles/e2_ngran_obj.dir/ngran_types.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

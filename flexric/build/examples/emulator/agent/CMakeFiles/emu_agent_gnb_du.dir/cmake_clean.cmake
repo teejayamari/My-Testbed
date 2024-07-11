@@ -1,7 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/emu_agent_gnb_du.dir/read_setup_ran.c.o"
+  "CMakeFiles/emu_agent_gnb_du.dir/read_setup_ran.c.o.d"
   "CMakeFiles/emu_agent_gnb_du.dir/sm_kpm.c.o"
+  "CMakeFiles/emu_agent_gnb_du.dir/sm_kpm.c.o.d"
   "CMakeFiles/emu_agent_gnb_du.dir/test_agent.c.o"
+  "CMakeFiles/emu_agent_gnb_du.dir/test_agent.c.o.d"
   "emu_agent_gnb_du"
   "emu_agent_gnb_du.pdb"
 )

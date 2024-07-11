@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/e2_conv_obj.dir/conversions.c.o"
+  "CMakeFiles/e2_conv_obj.dir/conversions.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

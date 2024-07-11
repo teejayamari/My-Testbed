@@ -1,56 +1,46 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/chatbot/research_project/flexric/test/rnd/fill_rnd_data_kpm.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/__/test/rnd/fill_rnd_data_kpm.c.o"
-  "/home/chatbot/research_project/flexric/test/rnd/fill_rnd_data_rc.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/__/test/rnd/fill_rnd_data_rc.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/agent_if/read/sm_ag_if_rd.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/agent_if/read/sm_ag_if_rd.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/gtp_sm/ie/gtp_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/gtp_sm/ie/gtp_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/mac_sm/ie/mac_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/mac_sm/ie/mac_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/pdcp_sm/ie/pdcp_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/pdcp_sm/ie/pdcp_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/rc_sm/ie/rc_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/rc_sm/ie/rc_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/rlc_sm/ie/rlc_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/rlc_sm/ie/rlc_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/slice_sm/ie/slice_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/slice_sm/ie/slice_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/sm/tc_sm/ie/tc_data_ie.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/tc_sm/ie/tc_data_ie.c.o"
-  "/home/chatbot/research_project/flexric/src/util/ngran_types.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/__/util/ngran_types.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/act_proc.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/act_proc.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/asio_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/asio_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/e2ap_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/e2ap_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/e42_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/e42_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/e42_xapp_api.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/e42_xapp_api.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/endpoint_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/endpoint_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/msg_dispatcher_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_dispatcher_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/msg_generator_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_generator_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/msg_handler_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_handler_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/pending_event_xapp.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/pending_event_xapp.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/plugin_agent.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/plugin_agent.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/plugin_ric.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/plugin_ric.c.o"
-  "/home/chatbot/research_project/flexric/src/xApp/sync_ui.c" "/home/chatbot/research_project/flexric/build/src/xApp/CMakeFiles/e42_xapp_shared.dir/sync_ui.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "ASN"
-  "E2AP_V2"
-  "KPM_V2_03"
-  "SERVICE_MODEL_DIR_PATH=\"/\""
-  "SQLITE3_XAPP"
-  "XAPP_DB_DIR=\"/tmp/\""
-  "e42_xapp_shared_EXPORTS"
   )
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../src"
-  "../src/xApp/../lib/e2ap/v2_03/ie/asn"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/chatbot/research_project/flexric/test/rnd/fill_rnd_data_kpm.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/__/test/rnd/fill_rnd_data_kpm.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/__/test/rnd/fill_rnd_data_kpm.c.o.d"
+  "/home/chatbot/research_project/flexric/test/rnd/fill_rnd_data_rc.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/__/test/rnd/fill_rnd_data_rc.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/__/test/rnd/fill_rnd_data_rc.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/agent_if/read/sm_ag_if_rd.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/agent_if/read/sm_ag_if_rd.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/agent_if/read/sm_ag_if_rd.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/gtp_sm/ie/gtp_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/gtp_sm/ie/gtp_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/gtp_sm/ie/gtp_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/mac_sm/ie/mac_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/mac_sm/ie/mac_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/mac_sm/ie/mac_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/pdcp_sm/ie/pdcp_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/pdcp_sm/ie/pdcp_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/pdcp_sm/ie/pdcp_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/rc_sm/ie/rc_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/rc_sm/ie/rc_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/rc_sm/ie/rc_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/rlc_sm/ie/rlc_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/rlc_sm/ie/rlc_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/rlc_sm/ie/rlc_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/slice_sm/ie/slice_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/slice_sm/ie/slice_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/slice_sm/ie/slice_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/sm/tc_sm/ie/tc_data_ie.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/tc_sm/ie/tc_data_ie.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/sm/tc_sm/ie/tc_data_ie.c.o.d"
+  "/home/chatbot/research_project/flexric/src/util/ngran_types.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/util/ngran_types.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/__/util/ngran_types.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/act_proc.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/act_proc.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/act_proc.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/asio_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/asio_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/asio_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/e2ap_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/e2ap_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/e2ap_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/e42_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/e42_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/e42_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/e42_xapp_api.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/e42_xapp_api.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/e42_xapp_api.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/endpoint_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/endpoint_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/endpoint_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/msg_dispatcher_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_dispatcher_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_dispatcher_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/msg_generator_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_generator_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_generator_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/msg_handler_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_handler_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/msg_handler_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/pending_event_xapp.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/pending_event_xapp.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/pending_event_xapp.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/plugin_agent.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/plugin_agent.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/plugin_agent.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/plugin_ric.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/plugin_ric.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/plugin_ric.c.o.d"
+  "/home/chatbot/research_project/flexric/src/xApp/sync_ui.c" "src/xApp/CMakeFiles/e42_xapp_shared.dir/sync_ui.c.o" "gcc" "src/xApp/CMakeFiles/e42_xapp_shared.dir/sync_ui.c.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

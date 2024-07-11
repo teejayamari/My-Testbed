@@ -1,27 +1,23 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/chatbot/research_project/flexric/src/lib/msg_hand/e2_node_arr.c" "/home/chatbot/research_project/flexric/build/src/lib/msg_hand/CMakeFiles/msg_hand_obj.dir/e2_node_arr.c.o"
-  "/home/chatbot/research_project/flexric/src/lib/msg_hand/reg_e2_nodes.c" "/home/chatbot/research_project/flexric/build/src/lib/msg_hand/CMakeFiles/msg_hand_obj.dir/reg_e2_nodes.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "E2AP_V2"
-  "SERVICE_MODEL_DIR_PATH=\"/\""
   )
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  "../src"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/chatbot/research_project/flexric/src/lib/msg_hand/e2_node_arr.c" "src/lib/msg_hand/CMakeFiles/msg_hand_obj.dir/e2_node_arr.c.o" "gcc" "src/lib/msg_hand/CMakeFiles/msg_hand_obj.dir/e2_node_arr.c.o.d"
+  "/home/chatbot/research_project/flexric/src/lib/msg_hand/reg_e2_nodes.c" "src/lib/msg_hand/CMakeFiles/msg_hand_obj.dir/reg_e2_nodes.c.o" "gcc" "src/lib/msg_hand/CMakeFiles/msg_hand_obj.dir/reg_e2_nodes.c.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
