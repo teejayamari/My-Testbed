@@ -8833,25 +8833,25 @@
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/db.c.o -c /home/chatbot/research_project/flexric/src/xApp/db/db.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/db.c.o -c /home/chatbot/research_project/flexric/src/xApp/db/db.c",
   "file": "/home/chatbot/research_project/flexric/src/xApp/db/db.c",
   "output": "src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/db.c.o"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3.c.o -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3.c.o -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3.c",
   "file": "/home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3.c",
   "output": "src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3.c.o"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3_wrapper.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3_wrapper.c",
   "file": "/home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3_wrapper.c",
   "output": "src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/__/__/util/time_now_us.c.o -c /home/chatbot/research_project/flexric/src/util/time_now_us.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info -g -std=gnu11 -fPIC -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -o CMakeFiles/e42_xapp_db_obj.dir/__/__/util/time_now_us.c.o -c /home/chatbot/research_project/flexric/src/util/time_now_us.c",
   "file": "/home/chatbot/research_project/flexric/src/util/time_now_us.c",
   "output": "src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/__/__/util/time_now_us.c.o"
 },

@@ -21,14 +21,13 @@
 
 #include "sqlite3_wrapper.h"
 #include "../../../util/time_now_us.h"
-#include "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_1.h"
+#include "kpm_ric_ind_msg_frm_1.h"
 
 #include <assert.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
 static
 void create_table(sqlite3* db, char* sql)
 {
