@@ -28,12 +28,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-static
-void create_table(sqlite3* db, char* sql)
-{
+
+static void create_table(sqlite3* db, char* sql) {
   char* err_msg = NULL;
   int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);
-  assert(rc == SQLITE_OK && "Error while creating the DB. Check the err_msg string for further info" );
+  assert(rc == SQLITE_OK && "Error while creating the DB. Check the err_msg string for further info");
 }
 
 static
@@ -901,7 +900,7 @@ int to_sql_string_gtp_NGUT(global_e2_node_id_t const* id,gtp_ngu_t_stats_t* gtp,
 }
 
 
-static int to_sql_string_kpm(kpm_meas_report_t* report, char* out, size_t out_len) {
+static int to_sql_string_kpm_measRecord(kpm_meas_report_t* report, char* out, size_t out_len) {
   assert(report != NULL);
   assert(out != NULL);
   const size_t max = 1024;
