@@ -98,7 +98,7 @@ void sm_cb_kpm(sm_ag_if_rd_t const* rd)
               // Get the Measurement Name
               char meas_info_name_str[msg_frm_1->meas_info_lst[z].meas_type.name.len + 1];
               memcpy(meas_info_name_str, msg_frm_1->meas_info_lst[z].meas_type.name.buf, msg_frm_1->meas_info_lst[z].meas_type.name.len);
-              meas_info_name_str[msg_frm_1->meas_type.name.len] = '\0';
+              meas_info_name_str[msg_frm_1->meas_info_lst[z].meas_type.name.len] = '\0';
 
               // Get the value of the Measurement
               switch (msg_frm_1->meas_data_lst[j].meas_record_lst[z].value)
