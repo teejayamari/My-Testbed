@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/nearRT-RIC.dir/near_ric.c.o"
-  "CMakeFiles/nearRT-RIC.dir/near_ric.c.o.d"
   "nearRT-RIC"
   "nearRT-RIC.pdb"
 )

@@ -35,144 +35,29 @@
 static
 pthread_mutex_t mtx;
 
-static
-void sm_cb_kpm(sm_ag_if_rd_t const* rd)
-{
+static void sm_cb_kpm(sm_ag_if_rd_t const* rd) {
   assert(rd != NULL);
   assert(rd->type == INDICATION_MSG_AGENT_IF_ANS_V0);
   assert(rd->ind.type == KPM_STATS_V3_0);
 
-  // Reading Indication Message Format 3
   kpm_ind_data_t const* ind = &rd->ind.kpm.ind;
   kpm_ric_ind_hdr_format_1_t const* hdr_frm_1 = &ind->hdr.kpm_ric_ind_hdr_format_1;
   kpm_ind_msg_format_3_t const* msg_frm_3 = &ind->msg.frm_3;
-
 
   int64_t const now = time_now_us();
   static int counter = 1;
   {
     lock_guard(&mtx);
 
-    printf("\n%7d KPM ind_msg latency = %ld [μs]\n", counter, now - hdr_frm_1->collectStartTime);  // xApp <-> E2 Node
+    printf("\n%7d KPM ind_msg latency = %ld [μs]\n", counter, now - hdr_frm_1->collectStartTime);
 
-    // Reported list of measurements per UE
-    for (size_t i = 0; i < msg_frm_3->ue_meas_report_lst_len; i++)
-    {
-      switch (msg_frm_3->meas_report_per_ue[i].ue_meas_report_lst.type)
-      {
-      case GNB_UE_ID_E2SM:
-        if (msg_frm_3->meas_report_per_ue[i].ue_meas_report_lst.gnb.gnb_cu_ue_f1ap_lst != NULL)
-        {
-          for (size_t j = 0; j < msg_frm_3->meas_report_per_ue[i].ue_meas_report_lst.gnb.gnb_cu_ue_f1ap_lst_len; j++)
-          {
-            printf("UE ID type = gNB-CU, gnb_cu_ue_f1ap = %u\n", msg_frm_3->meas_report_per_ue[i].ue_meas_report_lst.gnb.gnb_cu_ue_f1ap_lst[j]);
-          }
-        }
-        else
-        {
-          printf("UE ID type = gNB, amf_ue_ngap_id = %lu\n", msg_frm_3->meas_report_per_ue[i].ue_meas_report_lst.gnb.amf_ue_ngap_id);
-        }
-        break;
-
-      case GNB_DU_UE_ID_E2SM:
-        printf("UE ID type = gNB-DU, gnb_cu_ue_f1ap = %u\n", msg_frm_3->meas_report_per_ue[i].ue_meas_report_lst.gnb_du.gnb_cu_ue_f1ap);
-        break;
-
-      default:
-        assert(false && "UE ID type not yet implemented");
-      }
-
-      kpm_ind_msg_format_1_t const* msg_frm_1 = &msg_frm_3->meas_report_per_ue[i].ind_msg_format_1;
-
-      // UE Measurements per granularity period
-      for (size_t j = 0; j<msg_frm_1->meas_data_lst_len; j++)
-      {
-        for (size_t z = 0; z<msg_frm_1->meas_data_lst[j].meas_record_len; z++)
-        {
-          if (msg_frm_1->meas_info_lst_len > 0)
-          {
-            switch (msg_frm_1->meas_info_lst[z].meas_type.type)
-            {
-            case NAME_MEAS_TYPE:
-            {
-              // Get the Measurement Name
-              char meas_info_name_str[msg_frm_1->meas_info_lst[z].meas_type.name.len + 1];
-              memcpy(meas_info_name_str, msg_frm_1->meas_info_lst[z].meas_type.name.buf, msg_frm_1->meas_info_lst[z].meas_type.name.len);
-              meas_info_name_str[msg_frm_1->meas_info_lst[z].meas_type.name.len] = '\0';
-
-              // Get the value of the Measurement
-              switch (msg_frm_1->meas_data_lst[j].meas_record_lst[z].value)
-              {
-              case REAL_MEAS_VALUE:
-              {
-                if (strcmp(meas_info_name_str, "DRB.RlcSduDelayDl") == 0)
-                {
-                  printf("DRB.RlcSduDelayDl = %.2f [μs]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].real_val);
-                }
-                else if (strcmp(meas_info_name_str, "DRB.UEThpDl") == 0)
-                {
-                  printf("DRB.UEThpDl = %.2f [kbps]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].real_val);
-                }
-                else if (strcmp(meas_info_name_str, "DRB.UEThpUl") == 0)
-                {
-                  printf("DRB.UEThpUl = %.2f [kbps]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].real_val);
-                }
-                else
-                {
-                  printf("Measurement Name not yet implemented %s\n", meas_info_name_str);
-                  //assert(false && "Measurement Name not yet implemented");
-                }
-
-                break;
-              }
-
-
-              case INTEGER_MEAS_VALUE:
-              {
-                if (strcmp(meas_info_name_str, "RRU.PrbTotDl") == 0)
-                {
-                  printf("RRU.PrbTotDl = %d [PRBs]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].int_val);
-                }
-                else if (strcmp(meas_info_name_str, "RRU.PrbTotUl") == 0)
-                {
-                  printf("RRU.PrbTotUl = %d [PRBs]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].int_val);
-                }
-                else if (strcmp(meas_info_name_str, "DRB.PdcpSduVolumeDL") == 0)
-                {
-                  printf("DRB.PdcpSduVolumeDL = %d [kb]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].int_val);
-                }
-                else if (strcmp(meas_info_name_str, "DRB.PdcpSduVolumeUL") == 0)
-                {
-                  printf("DRB.PdcpSduVolumeUL = %d [kb]\n", msg_frm_1->meas_data_lst[j].meas_record_lst[z].int_val);
-                }
-                else
-                {
-                  printf("Measurement Name not yet implemented %s\n", meas_info_name_str);
-                  //assert(false && "Measurement Name not yet implemented");
-                }
-
-                break;
-              }
-
-              default:
-                assert(0 != 0 && "Value not recognized");
-              }
-
-              break;
-            }
-            case ID_MEAS_TYPE: 
-                printf(" ID_MEAS_TYPE \n");
-                break;
-
-            default:
-              assert(false && "Measurement Type not yet implemented");
-            }
-          }
-
-
-          if (msg_frm_1->meas_data_lst[j].incomplete_flag && *msg_frm_1->meas_data_lst[j].incomplete_flag == TRUE_ENUM_VALUE)
-            printf("Measurement Record not reliable");
-        }        
+    // Insert data into the database
+    char sql[1024];
+    for (size_t i = 0; i < msg_frm_3->ue_meas_report_lst_len; i++) {
+      // Generate SQL string for each measurement
+      int rc = to_sql_string_kpm(&msg_frm_3->meas_report_per_ue[i], sql, sizeof(sql));
+      if (rc > 0) {
+        insert_db(db, sql);
       }
     }
     counter++;

@@ -1,24 +1,29 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/chatbot/research_project/flexric/src/lib/ind_event.c" "/home/chatbot/research_project/flexric/build/src/lib/CMakeFiles/pending_events_obj.dir/ind_event.c.o"
+  "/home/chatbot/research_project/flexric/src/lib/pending_event_ric.c" "/home/chatbot/research_project/flexric/build/src/lib/CMakeFiles/pending_events_obj.dir/pending_event_ric.c.o"
+  "/home/chatbot/research_project/flexric/src/lib/pending_events.c" "/home/chatbot/research_project/flexric/build/src/lib/CMakeFiles/pending_events_obj.dir/pending_events.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "E2AP_V2"
+  "KPM_V2_03"
+  "SERVICE_MODEL_DIR_PATH=\"/\""
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/chatbot/research_project/flexric/src/lib/ind_event.c" "src/lib/CMakeFiles/pending_events_obj.dir/ind_event.c.o" "gcc" "src/lib/CMakeFiles/pending_events_obj.dir/ind_event.c.o.d"
-  "/home/chatbot/research_project/flexric/src/lib/pending_event_ric.c" "src/lib/CMakeFiles/pending_events_obj.dir/pending_event_ric.c.o" "gcc" "src/lib/CMakeFiles/pending_events_obj.dir/pending_event_ric.c.o.d"
-  "/home/chatbot/research_project/flexric/src/lib/pending_events.c" "src/lib/CMakeFiles/pending_events_obj.dir/pending_events.c.o" "gcc" "src/lib/CMakeFiles/pending_events_obj.dir/pending_events.c.o.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../src"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

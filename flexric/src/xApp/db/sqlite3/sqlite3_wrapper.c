@@ -258,8 +258,8 @@ void create_gtp_table(sqlite3* db)
 
   create_table(db, sql_gtp);
 }
-void create_kpm_table(sqlite3* db) 
-{
+
+void create_kpm_table(sqlite3* db) {
   assert(db != NULL);
 
   char* sql_kpm_measRecord = "DROP TABLE IF EXISTS KPM_MeasRecord;"
@@ -275,7 +275,6 @@ void create_kpm_table(sqlite3* db)
                        ");";
   create_table(db, sql_kpm_measRecord);
 
-  // ToDo: PRIMARY KEY UNIQUE
   char* sql_kpm_labelInfo = "DROP TABLE IF EXISTS KPM_LabelInfo;"
   "CREATE TABLE KPM_LabelInfo(tstamp INT CHECK(tstamp > 0)," 
                        "ngran_node INT CHECK(ngran_node >= 0 AND ngran_node < 9),"
@@ -311,15 +310,16 @@ void create_kpm_table(sqlite3* db)
   create_table(db, sql_kpm_labelInfo);
 }
 
-static
-void insert_db(sqlite3* db, char const* sql)
-{
+static void insert_db(sqlite3* db, char const* sql) {
   assert(db != NULL);
   assert(sql != NULL);
 
   char* err_msg = NULL;
   int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);
-  assert(rc == SQLITE_OK && "Error while inserting into the DB. Check the err_msg string for further info");
+  if (rc != SQLITE_OK) {
+    fprintf(stderr, "SQL error: %s\n", err_msg);
+    sqlite3_free(err_msg);
+  }
 }
 
 
@@ -901,18 +901,36 @@ int to_sql_string_gtp_NGUT(global_e2_node_id_t const* id,gtp_ngu_t_stats_t* gtp,
 }
 
 
-void to_sql_string_kpm_measRecord(const kpm_ind_msg_format_1_t* msg_frm_1, int64_t tstamp, char* sql, size_t sql_len) {
-    // Ensure the structure members are correctly accessed
-    printf("%d, %d, %d, %d, %d, %d, %d, %d\n",
-        msg_frm_1->ngran_node,
-        msg_frm_1->mcc,
-        msg_frm_1->mnc,
-        msg_frm_1->mnc_digit_len,
-        msg_frm_1->nb_id,
-        msg_frm_1->cu_du_id,
-        msg_frm_1->incompleteFlag,
-        msg_frm_1->val
-    );
+static int to_sql_string_kpm(kpm_meas_report_t* report, char* out, size_t out_len) {
+  assert(report != NULL);
+  assert(out != NULL);
+  const size_t max = 1024;
+  assert(out_len >= max);
+
+  int rc = snprintf(out, max, 
+      "INSERT INTO KPM_MeasRecord VALUES("
+      "%ld," // tstamp
+      "%d,"  // ngran_node
+      "%d,"  // mcc
+      "%d,"  // mnc
+      "%d,"  // mnc_digit_len
+      "%d,"  // nb_id
+      "'%s'," // cu_du_id
+      "%d,"  // incompleteFlag
+      "%f"   // val
+      ");",
+      report->tstamp,
+      report->ngran_node,
+      report->mcc,
+      report->mnc,
+      report->mnc_digit_len,
+      report->nb_id,
+      report->cu_du_id,
+      report->incompleteFlag,
+      report->val
+  );
+  assert(rc < (int)max && "Not enough space in the char array to write all the data");
+  return rc;
 }
 
 static

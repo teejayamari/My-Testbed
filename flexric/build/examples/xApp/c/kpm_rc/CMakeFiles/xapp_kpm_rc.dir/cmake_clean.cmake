@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xapp_kpm_rc.dir/__/__/__/__/src/util/alg_ds/alg/defer.c.o"
-  "CMakeFiles/xapp_kpm_rc.dir/__/__/__/__/src/util/alg_ds/alg/defer.c.o.d"
   "CMakeFiles/xapp_kpm_rc.dir/xapp_kpm_rc.c.o"
-  "CMakeFiles/xapp_kpm_rc.dir/xapp_kpm_rc.c.o.d"
   "xapp_kpm_rc"
   "xapp_kpm_rc.pdb"
 )
