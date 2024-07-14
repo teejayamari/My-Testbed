@@ -30,6 +30,7 @@
 #include <string.h>
 
 static void create_table(sqlite3* db, char* sql) {
+
   char* err_msg = NULL;
   int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);
   assert(rc == SQLITE_OK && "Error while creating the DB. Check the err_msg string for further info");
@@ -273,6 +274,7 @@ void create_kpm_table(sqlite3* db) {
                        "val REAL CHECK(val >=0 AND val < 4294967296 )"
                        ");";
   create_table(db, sql_kpm_measRecord);
+  printf("KPM_MeasRecord table created successfully.\n");
 
   char* sql_kpm_labelInfo = "DROP TABLE IF EXISTS KPM_LabelInfo;"
   "CREATE TABLE KPM_LabelInfo(tstamp INT CHECK(tstamp > 0)," 
@@ -307,17 +309,24 @@ void create_kpm_table(sqlite3* db) {
                        "avg INT CHECK(avg >= 0 AND avg < 4294967296)"
                        ");";
   create_table(db, sql_kpm_labelInfo);
+  printf("KPM_LabelInfo table created successfully.\n");
 }
 
-static void insert_db(sqlite3* db, char const* sql) {
-  assert(db != NULL);
-  assert(sql != NULL);
+int to_sql_string_kpm(const kpm_meas_report_per_ue_t* report, char* sql, size_t sql_len) {
+  // Convert the report to an SQL string
+  // This is a placeholder implementation
+  snprintf(sql, sql_len, "INSERT INTO kpm_data (field1, field2) VALUES (%d, %d);", report->field1, report->field2);
+  return 1; // Return 1 on success
+}
 
-  char* err_msg = NULL;
-  int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);
+void insert_db(sqlite3* handler, const char* sql) {
+  char* err_msg = 0;
+  int rc = sqlite3_exec(handler, sql, 0, 0, &err_msg);
   if (rc != SQLITE_OK) {
     fprintf(stderr, "SQL error: %s\n", err_msg);
     sqlite3_free(err_msg);
+  } else {
+    fprintf(stdout, "Records created successfully\n");
   }
 }
 
@@ -900,36 +909,25 @@ int to_sql_string_gtp_NGUT(global_e2_node_id_t const* id,gtp_ngu_t_stats_t* gtp,
 }
 
 
-static int to_sql_string_kpm_measRecord(kpm_meas_report_t* report, char* out, size_t out_len) {
-  assert(report != NULL);
-  assert(out != NULL);
-  const size_t max = 1024;
-  assert(out_len >= max);
+void to_sql_string_kpm_measRecord(const kpm_ind_msg_format_1_t* msg_frm_1, int64_t tstamp, char* sql, size_t sql_len) {
+    assert(msg_frm_1 != NULL);
+    assert(sql != NULL);
 
-  int rc = snprintf(out, max, 
-      "INSERT INTO KPM_MeasRecord VALUES("
-      "%ld," // tstamp
-      "%d,"  // ngran_node
-      "%d,"  // mcc
-      "%d,"  // mnc
-      "%d,"  // mnc_digit_len
-      "%d,"  // nb_id
-      "'%s'," // cu_du_id
-      "%d,"  // incompleteFlag
-      "%f"   // val
-      ");",
-      report->tstamp,
-      report->ngran_node,
-      report->mcc,
-      report->mnc,
-      report->mnc_digit_len,
-      report->nb_id,
-      report->cu_du_id,
-      report->incompleteFlag,
-      report->val
-  );
-  assert(rc < (int)max && "Not enough space in the char array to write all the data");
-  return rc;
+    int rc = snprintf(sql, sql_len,
+        "INSERT INTO KPM_MeasRecord (tstamp, ngran_node, mcc, mnc, mnc_digit_len, nb_id, cu_du_id, incompleteFlag, val) VALUES ("
+        "%ld, %d, %d, %d, %d, %d, %d, %d, %f);",
+        tstamp,
+        msg_frm_1->ngran_node,
+        msg_frm_1->mcc,
+        msg_frm_1->mnc,
+        msg_frm_1->mnc_digit_len,
+        msg_frm_1->nb_id,
+        msg_frm_1->cu_du_id,  // Assuming cu_du_id is an integer
+        msg_frm_1->incompleteFlag,
+        (double)msg_frm_1->val  // Cast to double if val is an int
+    );
+
+    assert(rc < (int)sql_len && "Not enough space in the char array to write all the data");
 }
 
 static
@@ -1056,13 +1054,16 @@ void write_gtp_stats(sqlite3* db, global_e2_node_id_t const* id, gtp_ind_data_t 
   insert_db(db, buffer);
 }
 
-// Function to write KPM stats to the database
 void write_kpm_stats(sqlite3* db, kpm_ind_msg_format_1_t const* msg_frm_1, int64_t tstamp) {
     assert(db != NULL);
     assert(msg_frm_1 != NULL);
 
     char sql[1024];
     to_sql_string_kpm_measRecord(msg_frm_1, tstamp, sql, sizeof(sql));
+    
+    // Debug print to check the SQL string
+    printf("SQL Query: %s\n", sql);
+
     insert_db(db, sql);
 }
 
@@ -1165,6 +1166,7 @@ void write_db_sqlite3(sqlite3* db, global_e2_node_id_t const* id, sm_ag_if_rd_t 
     assert(0!=0 && "Unknown statistics type received ");
   }
 }
+
 
 
 

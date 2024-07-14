@@ -23,6 +23,7 @@
 #include "../../../../src/util/alg_ds/alg/defer.h"
 #include "../../../../src/util/time_now_us.h"
 #include "../../../../src/util/alg_ds/ds/lock_guard/lock_guard.h"
+#include "../../../../src/xApp/db/db.h" // Include the header for database functions
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -31,9 +32,8 @@
 #include <signal.h>
 #include <pthread.h>
 
-
-static
-pthread_mutex_t mtx;
+static pthread_mutex_t mtx;
+static db_xapp_t db; // Declare the db variable
 
 static void sm_cb_kpm(sm_ag_if_rd_t const* rd) {
   assert(rd != NULL);
@@ -57,16 +57,17 @@ static void sm_cb_kpm(sm_ag_if_rd_t const* rd) {
       // Generate SQL string for each measurement
       int rc = to_sql_string_kpm(&msg_frm_3->meas_report_per_ue[i], sql, sizeof(sql));
       if (rc > 0) {
-        insert_db(db, sql);
+        printf("Generated SQL: %s\n", sql); // Debug statement
+        insert_db(db.handler, sql); // Use db.handler
+      } else {
+        printf("Failed to generate SQL string for measurement %zu\n", i); // Debug statement
       }
     }
     counter++;
   }
 }
 
-static
-kpm_event_trigger_def_t gen_ev_trig(uint64_t period)
-{
+static kpm_event_trigger_def_t gen_ev_trig(uint64_t period) {
   kpm_event_trigger_def_t dst = {0};
 
   dst.type = FORMAT_1_RIC_EVENT_TRIGGER;
@@ -75,9 +76,7 @@ kpm_event_trigger_def_t gen_ev_trig(uint64_t period)
   return dst;
 }
 
-static
-meas_info_format_1_lst_t gen_meas_info_format_1_lst(const char* action)
-{
+static meas_info_format_1_lst_t gen_meas_info_format_1_lst(const char* action) {
   meas_info_format_1_lst_t dst = {0};
 
   dst.meas_type.type = NAME_MEAS_TYPE;
@@ -94,9 +93,7 @@ meas_info_format_1_lst_t gen_meas_info_format_1_lst(const char* action)
   return dst;
 }
 
-static
-kpm_act_def_format_1_t gen_act_def_frmt_1(const char** action)
-{
+static kpm_act_def_format_1_t gen_act_def_frmt_1(const char** action) {
   kpm_act_def_format_1_t dst = {0};
 
   dst.gran_period_ms = 1000;
@@ -117,9 +114,7 @@ kpm_act_def_format_1_t gen_act_def_frmt_1(const char** action)
   return dst;
 }
 
-static
-test_info_lst_t filter_predicate(test_cond_type_e type, test_cond_e cond, int value)
-{
+static test_info_lst_t filter_predicate(test_cond_type_e type, test_cond_e cond, int value) {
   test_info_lst_t dst = {0};
 
   dst.test_cond_type = type;
@@ -141,10 +136,7 @@ test_info_lst_t filter_predicate(test_cond_type_e type, test_cond_e cond, int va
   return dst;
 } 
 
-
-static
-kpm_act_def_format_4_t gen_act_def_frmt_4(const char** action)
-{
+static kpm_act_def_format_4_t gen_act_def_frmt_4(const char** action) {
   kpm_act_def_format_4_t dst = {0};
 
   // [1, 32768]
@@ -167,10 +159,7 @@ kpm_act_def_format_4_t gen_act_def_frmt_4(const char** action)
   return dst;
 }
 
-
-static
-kpm_act_def_t gen_act_def(const char** act)
-{
+static kpm_act_def_t gen_act_def(const char** act) {
   kpm_act_def_t dst = {0};
 
   dst.type = FORMAT_4_ACTION_DEFINITION;
@@ -178,13 +167,15 @@ kpm_act_def_t gen_act_def(const char** act)
   return dst;
 }
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
   fr_args_t args = init_fr_args(argc, argv);
 
-  //Init the xApp
+  // Initialize the xApp
   init_xapp_api(&args);
   sleep(1);
+
+  // Initialize the database
+  init_db_xapp(&db, "kpm_data.db");
 
   e2_node_arr_t nodes = e2_nodes_xapp_api();
   defer({ free_e2_node_arr(&nodes); });
@@ -199,9 +190,9 @@ int main(int argc, char *argv[])
 
   // KPM indication
   sm_ans_xapp_t* kpm_handle = NULL;
-  if(nodes.len > 0){
-    kpm_handle = calloc( nodes.len, sizeof(sm_ans_xapp_t) ); 
-    assert(kpm_handle  != NULL);
+  if (nodes.len > 0) {
+    kpm_handle = calloc(nodes.len, sizeof(sm_ans_xapp_t));
+    assert(kpm_handle != NULL);
   }
 
   for (int i = 0; i < nodes.len; i++) {
@@ -225,29 +216,25 @@ int main(int argc, char *argv[])
     kpm_sub.ad = calloc(1, sizeof(kpm_act_def_t));
     assert(kpm_sub.ad != NULL && "Memory exhausted");
 
-
-    switch (n->id.type)
-    {
-    case ngran_gNB: ;
-      const char *act_gnb[] = {"DRB.PdcpSduVolumeDL", "DRB.PdcpSduVolumeUL", "DRB.RlcSduDelayDl", "DRB.UEThpDl", "DRB.UEThpUl", "RRU.PrbTotDl", "RRU.PrbTotUl", NULL}; // 3GPP TS 28.552
-      *kpm_sub.ad = gen_act_def(act_gnb);
-      break;
-    case ngran_eNB: ;
-      const char *act_enb[] = {"DRB.PdcpSduVolumeDL", "DRB.PdcpSduVolumeUL", "RRU.PrbTotDl", "RRU.PrbTotUl", NULL}; // 3GPP TS 32.425
-      *kpm_sub.ad = gen_act_def(act_enb);
-      break;
-    case ngran_gNB_CU: ;
-      const char *act_gnb_cu[] = {"DRB.PdcpSduVolumeDL", "DRB.PdcpSduVolumeUL", NULL}; // 3GPP TS 28.552
-      *kpm_sub.ad = gen_act_def(act_gnb_cu);
-      break;
-
-    case ngran_gNB_DU: ;
-      const char *act_gnb_du[] = {"DRB.RlcSduDelayDl", "DRB.UEThpDl", "DRB.UEThpUl", "RRU.PrbTotDl", "RRU.PrbTotUl", NULL}; // 3GPP TS 28.552
-      *kpm_sub.ad = gen_act_def(act_gnb_du);
-      break;
-
-    default:
-      assert(false && "NG-RAN Type not yet implemented");
+    switch (n->id.type) {
+      case ngran_gNB: ;
+        const char *act_gnb[] = {"DRB.PdcpSduVolumeDL", "DRB.PdcpSduVolumeUL", "DRB.RlcSduDelayDl", "DRB.UEThpDl", "DRB.UEThpUl", "RRU.PrbTotDl", "RRU.PrbTotUl", NULL}; // 3GPP TS 28.552
+        *kpm_sub.ad = gen_act_def(act_gnb);
+        break;
+      case ngran_eNB: ;
+        const char *act_enb[] = {"DRB.PdcpSduVolumeDL", "DRB.PdcpSduVolumeUL", "RRU.PrbTotDl", "RRU.PrbTotUl", NULL}; // 3GPP TS 32.425
+        *kpm_sub.ad = gen_act_def(act_enb);
+        break;
+      case ngran_gNB_CU: ;
+        const char *act_gnb_cu[] = {"DRB.PdcpSduVolumeDL", "DRB.PdcpSduVolumeUL", NULL}; // 3GPP TS 28.552
+        *kpm_sub.ad = gen_act_def(act_gnb_cu);
+        break;
+      case ngran_gNB_DU: ;
+        const char *act_gnb_du[] = {"DRB.RlcSduDelayDl", "DRB.UEThpDl", "DRB.UEThpUl", "RRU.PrbTotDl", "RRU.PrbTotUl", NULL}; // 3GPP TS 28.552
+        *kpm_sub.ad = gen_act_def(act_gnb_du);
+        break;
+      default:
+        assert(false && "NG-RAN Type not yet implemented");
     }
 
     const int KPM_ran_function = 2;
@@ -258,17 +245,20 @@ int main(int argc, char *argv[])
 
   sleep(10);
 
-  for(int i = 0; i < nodes.len; ++i){
+  for (int i = 0; i < nodes.len; ++i) {
     // Remove the handle previously returned
     rm_report_sm_xapp_api(kpm_handle[i].u.handle);
   }
 
-  if(nodes.len > 0){
+  if (nodes.len > 0) {
     free(kpm_handle);
   }
 
-  //Stop the xApp
-  while(try_stop_xapp_api() == false)
+  // Close the database
+  close_db_xapp(&db);
+
+  // Stop the xApp
+  while (try_stop_xapp_api() == false)
     usleep(1000);
 
   printf("Test xApp run SUCCESSFULLY\n");

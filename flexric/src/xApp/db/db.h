@@ -45,9 +45,11 @@ typedef struct{
 } db_xapp_t;
 
 void init_db_xapp(db_xapp_t* db, char const* db_filename);
-
 void close_db_xapp(db_xapp_t* db);
-
 void write_db_xapp(db_xapp_t* db, global_e2_node_id_t const* id, sm_ag_if_rd_t const* rd);
+
+// Add these declarations
+int to_sql_string_kpm(const kpm_meas_report_per_ue_t* report, char* sql, size_t sql_len);
+void insert_db(sqlite3* handler, const char* sql);
 
 #endif
