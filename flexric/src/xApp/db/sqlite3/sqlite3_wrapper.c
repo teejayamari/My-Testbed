@@ -22,6 +22,7 @@
 #include "sqlite3_wrapper.h"
 #include "../../../util/time_now_us.h"
 #include "kpm_ric_ind_msg_frm_1.h"
+#include "../../sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.h" // Correct path
 
 #include <assert.h>
 #include <stddef.h>

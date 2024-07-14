@@ -103,10 +103,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
-
-//Value Computed by CMake.
-CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/chatbot/research_project/flexric/build/CMakeFiles/pkgRedirects
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -274,9 +271,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
-//Path to a program.
-CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
-
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -312,9 +306,6 @@ FlatCC_LIB_DIR:STRING=
 
 //Value Computed by CMake
 Flexric_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build
-
-//Value Computed by CMake
-Flexric_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Flexric_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric
@@ -395,9 +386,6 @@ XAPP_MULTILANGUAGE:BOOL=ON
 XAPP_SDK_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/xApp/swig
 
 //Value Computed by CMake
-XAPP_SDK_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
 XAPP_SDK_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/xApp/swig
 
 //xApp target language.
@@ -410,16 +398,10 @@ _Python3_EXECUTABLE:FILEPATH=/usr/bin/python3.8
 gtp_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/gtp_sm
 
 //Value Computed by CMake
-gtp_sm_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
 gtp_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/gtp_sm
 
 //Value Computed by CMake
 kpm_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03
-
-//Value Computed by CMake
-kpm_sm_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 kpm_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03
@@ -428,16 +410,10 @@ kpm_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/kpm_sm/kp
 mac_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/mac_sm
 
 //Value Computed by CMake
-mac_sm_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
 mac_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/mac_sm
 
 //Value Computed by CMake
 pdcp_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/pdcp_sm
-
-//Value Computed by CMake
-pdcp_sm_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 pdcp_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/pdcp_sm
@@ -446,16 +422,10 @@ pdcp_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/pdcp_sm
 rc_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/rc_sm
 
 //Value Computed by CMake
-rc_sm_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
 rc_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/rc_sm
 
 //Value Computed by CMake
 rlc_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/rlc_sm
-
-//Value Computed by CMake
-rlc_sm_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 rlc_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/rlc_sm
@@ -464,16 +434,10 @@ rlc_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/rlc_sm
 slice_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/slice_sm
 
 //Value Computed by CMake
-slice_sm_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
 slice_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/slice_sm
 
 //Value Computed by CMake
 tc_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/src/sm/tc_sm
-
-//Value Computed by CMake
-tc_sm_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 tc_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/tc_sm
@@ -482,16 +446,10 @@ tc_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/src/sm/tc_sm
 test_enc_dec_kpm_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/test/encode_decode/sm/kpm/kpm_sm_v02.03
 
 //Value Computed by CMake
-test_enc_dec_kpm_sm_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
 test_enc_dec_kpm_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/test/encode_decode/sm/kpm/kpm_sm_v02.03
 
 //Value Computed by CMake
 test_enc_dec_rc_sm_BINARY_DIR:STATIC=/home/chatbot/research_project/flexric/build/test/encode_decode/sm/rc
-
-//Value Computed by CMake
-test_enc_dec_rc_sm_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 test_enc_dec_rc_sm_SOURCE_DIR:STATIC=/home/chatbot/research_project/flexric/test/encode_decode/sm/rc
@@ -559,8 +517,6 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
-//Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/snap/cmake/1403/bin/ccmake
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -678,8 +634,6 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STRIP
 CMAKE_STRIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_TAPI
-CMAKE_TAPI-ADVANCED:INTERNAL=1
 //uname command
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
@@ -736,21 +690,11 @@ XAPP_C_INSTALL-STRINGS:INTERNAL=TRUE;FALSE
 XAPP_DB-STRINGS:INTERNAL=SQLITE3_XAPP;NONE_XAPP
 //STRINGS property for variable: XAPP_TARGET_LANGUAGE
 XAPP_TARGET_LANGUAGE-STRINGS:INTERNAL=PYTHON_LANG;GO_LANG;JAVA_LANG;JAVASCRIPT_LANG
-//linker supports push/pop state
-_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
-//Compiler reason failure
-_Python3_Compiler_REASON_FAILURE:INTERNAL=
-//Development reason failure
-_Python3_Development_REASON_FAILURE:INTERNAL=
 //ADVANCED property for variable: _Python3_EXECUTABLE
 _Python3_EXECUTABLE-ADVANCED:INTERNAL=1
-//Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;8;10;64;32;<none>;cpython-38-x86_64-linux-gnu;abi3;/usr/lib/python3.8;/usr/lib/python3.8;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 //ADVANCED property for variable: _Python3_INTERPRETER_SIGNATURE
 _Python3_INTERPRETER_SIGNATURE-ADVANCED:INTERNAL=1
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=60fbcba4d3ec42cb22d9b25de2c7c03a
-//NumPy reason failure
-_Python3_NumPy_REASON_FAILURE:INTERNAL=
 
