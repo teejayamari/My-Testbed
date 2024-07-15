@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wemp
 
 C_DEFINES = -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\"/\" -DSQLITE3_XAPP
 
-C_INCLUDES = -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie 
+C_INCLUDES = -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie -I/home/chatbot/research_project/flexric/src/xApp/db 
 

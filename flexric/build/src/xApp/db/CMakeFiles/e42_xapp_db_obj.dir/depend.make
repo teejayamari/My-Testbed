@@ -203,9 +203,11 @@ src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/l
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/3gpp/ie/nr_cgi.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/3gpp/ie/plmn_identity.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/3gpp/ie/s_nssai.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/e2ap/e2ap_global_node_id_wrapper.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/sm/ie/cell_global_id.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/sm/ie/ran_function_name.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/sm/ie/ue_id.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/agent_if/read/sm_ag_if_rd.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/data/bin_range_def.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/data/enum_value.h
@@ -236,7 +238,15 @@ src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/s
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_1.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_3.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/alg_ds/ds/seq_container/seq_arr.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/alg_ds/ds/seq_container/seq_deque.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/alg_ds/ds/seq_container/seq_generic.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/alg_ds/ds/seq_container/seq_list.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/alg_ds/ds/seq_container/seq_ring.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/alg_ds/ds/tsn_queue/tsn_queue.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/util/byte_array.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/xApp/db/db.h
+src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/xApp/db/sqlite3/sqlite3.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/3gpp/ie/e1_e2sm.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/3gpp/ie/e2ap_gnb_id.h
 src/xApp/db/CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o: ../src/lib/3gpp/ie/f1_e2sm.h

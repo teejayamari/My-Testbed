@@ -151,6 +151,16 @@ void free_e2_node_ag_if_wrapper(void* it)
   free_sm_ag_if_rd_ind(&d->rd.ind);
 }
 
+void insert_db(sqlite3* handler, const char* sql) {
+  char* err_msg = 0;
+  int rc = sqlite3_exec(handler, sql, 0, 0, &err_msg);
+  if (rc != SQLITE_OK) {
+    fprintf(stderr, "SQL error: %s\n", err_msg);
+    sqlite3_free(err_msg);
+  } else {
+    fprintf(stdout, "Records created successfully\n");
+  }
+}
 
 void close_db_xapp(db_xapp_t* db)
 {

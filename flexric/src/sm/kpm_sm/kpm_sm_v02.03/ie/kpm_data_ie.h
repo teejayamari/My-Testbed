@@ -54,9 +54,15 @@ typedef struct {
 // Debugging KPM to SQLite DB
 // Define the kpm_meas_report_per_ue_t structure
 typedef struct {
-    int field1; // Replace with actual fields
-    int field2; // Replace with actual fields
-    // Add other fields as necessary
+  int64_t timestamp;
+  int node_type;
+  int mcc;
+  int mnc;
+  int mnc_length;
+  int node_id;
+  char cu_du_id[64];
+  int incomplete_flag;
+  double value;
 } kpm_meas_report_per_ue_t;
 
 #endif // KPM_DATA_IE_H

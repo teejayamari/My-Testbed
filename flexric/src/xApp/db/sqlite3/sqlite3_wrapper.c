@@ -20,6 +20,7 @@
  */
 
 #include "sqlite3_wrapper.h"
+#include "db.h"
 #include "../../../util/time_now_us.h"
 #include "kpm_data_ie.h"
 #include "kpm_ric_info/kpm_ric_ind_msg_frm_1.h"
@@ -30,8 +31,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// Function to create a table
 static void create_table(sqlite3* db, char* sql) {
-
   char* err_msg = NULL;
   int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);
   assert(rc == SQLITE_OK && "Error while creating the DB. Check the err_msg string for further info");
@@ -315,20 +316,10 @@ void create_kpm_table(sqlite3* db) {
 
 int to_sql_string_kpm(const kpm_meas_report_per_ue_t* report, char* sql, size_t sql_len) {
   // Convert the report to an SQL string
-  // This is a placeholder implementation
-  snprintf(sql, sql_len, "INSERT INTO kpm_data (field1, field2) VALUES (%d, %d);", report->field1, report->field2);
+  snprintf(sql, sql_len, "INSERT INTO KPM_MeasRecord (tstamp, ngran_node, mcc, mnc, mnc_digit_len, nb_id, cu_du_id, incompleteFlag, val) VALUES (%ld, %d, %d, %d, %d, %d, '%s', %d, %f);",
+           report->timestamp, report->node_type, report->mcc, report->mnc, report->mnc_length, report->node_id, report->cu_du_id, report->incomplete_flag, report->value);
+  printf("Generated SQL for KPM_MeasRecord: %s\n", sql); // Debug statement
   return 1; // Return 1 on success
-}
-
-void insert_db(sqlite3* handler, const char* sql) {
-  char* err_msg = 0;
-  int rc = sqlite3_exec(handler, sql, 0, 0, &err_msg);
-  if (rc != SQLITE_OK) {
-    fprintf(stderr, "SQL error: %s\n", err_msg);
-    sqlite3_free(err_msg);
-  } else {
-    fprintf(stdout, "Records created successfully\n");
-  }
 }
 
 

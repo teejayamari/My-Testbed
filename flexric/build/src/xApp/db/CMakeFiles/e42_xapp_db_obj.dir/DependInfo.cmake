@@ -24,6 +24,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src"
   "../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie"
   "../src/sm/kpm_sm/kpm_sm_v02.03/ie"
+  "../src/xApp/db"
   )
 
 # Targets to which this target links.
