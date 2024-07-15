@@ -8,7 +8,8 @@ if(XAPP_DB STREQUAL "SQLITE3_XAPP")
                          )
 
   target_include_directories(e42_xapp_db_obj PUBLIC
-      ${CMAKE_SOURCE_DIR}/src/sm/kpm_sm/kpm_sm_v02.03/ie  # Updated path
+      ${CMAKE_SOURCE_DIR}/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie
+      ${CMAKE_SOURCE_DIR}/src/sm/kpm_sm/kpm_sm_v02.03/ie
   )
 
 else()

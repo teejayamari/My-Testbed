@@ -22,6 +22,7 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../src"
+  "../src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie"
   "../src/sm/kpm_sm/kpm_sm_v02.03/ie"
   )
 

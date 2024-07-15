@@ -2521,77 +2521,77 @@
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ran_function_def.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ran_function_def.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ran_function_def.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ran_function_def.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ran_function_def.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_1.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_2.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_2.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_2.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_2.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_2.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_3.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_3.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_3.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_3.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_3.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_4.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_4.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_4.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_5.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_action_def_frm_5.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_action_def_frm_5.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_event_trigger_def.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_event_trigger_def.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_event_trigger_def_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def_frm_1.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_event_trigger_def_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def_frm_1.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def_frm_1.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_hdr.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_hdr.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_hdr_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr_frm_1.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_hdr_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr_frm_1.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_hdr_frm_1.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_1.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg_frm_1.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_1.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_1.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg_frm_2.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg_frm_2.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_2.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info",
-  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg_frm_3.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_3.c",
+  "command": "/usr/bin/cc -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/kpm_ric_info_obj.dir/kpm_ric_ind_msg_frm_3.c.o   -c /home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_3.c",
   "file": "/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info/kpm_ric_ind_msg_frm_3.c"
 },
 {
@@ -7361,22 +7361,22 @@
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/db.c.o   -c /home/chatbot/research_project/flexric/src/xApp/db/db.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/db.c.o   -c /home/chatbot/research_project/flexric/src/xApp/db/db.c",
   "file": "/home/chatbot/research_project/flexric/src/xApp/db/db.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3.c.o   -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3.c.o   -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3.c",
   "file": "/home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o   -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3_wrapper.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/sqlite3/sqlite3_wrapper.c.o   -c /home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3_wrapper.c",
   "file": "/home/chatbot/research_project/flexric/src/xApp/db/sqlite3/sqlite3_wrapper.c"
 },
 {
   "directory": "/home/chatbot/research_project/flexric/build/src/xApp/db",
-  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/__/__/util/time_now_us.c.o   -c /home/chatbot/research_project/flexric/src/util/time_now_us.c",
+  "command": "/usr/bin/cc -DE2AP_V2 -DKPM_V2_03 -DSERVICE_MODEL_DIR_PATH=\\\"/\\\" -DSQLITE3_XAPP -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie  -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wempty-body -std=gnu11 -o CMakeFiles/e42_xapp_db_obj.dir/__/__/util/time_now_us.c.o   -c /home/chatbot/research_project/flexric/src/util/time_now_us.c",
   "file": "/home/chatbot/research_project/flexric/src/util/time_now_us.c"
 },
 {

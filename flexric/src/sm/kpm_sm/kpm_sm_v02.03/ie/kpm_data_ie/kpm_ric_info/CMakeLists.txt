@@ -19,3 +19,7 @@ set(KPM_RIC_INFO_SRCS
 add_library(kpm_ric_info_obj OBJECT
                             ${KPM_RIC_INFO_SRCS}
                             )
+                            
+target_include_directories(kpm_ric_info_obj PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}  # Ensure this path is correct
+)

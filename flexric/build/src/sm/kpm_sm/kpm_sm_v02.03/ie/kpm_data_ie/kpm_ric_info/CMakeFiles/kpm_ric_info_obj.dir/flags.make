@@ -6,5 +6,5 @@ C_FLAGS = -g -fPIC   -W -Wall -Wextra -g -Wno-unused-result -Warray-bounds -Wemp
 
 C_DEFINES = -DSERVICE_MODEL_DIR_PATH=\"/\"
 
-C_INCLUDES = -I/home/chatbot/research_project/flexric/src 
+C_INCLUDES = -I/home/chatbot/research_project/flexric/src -I/home/chatbot/research_project/flexric/src/sm/kpm_sm/kpm_sm_v02.03/ie/kpm_data_ie/kpm_ric_info 
 

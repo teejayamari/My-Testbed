@@ -1,5 +1,9 @@
 #ifndef KPM_V2_03_INFORMATION_ELEMENTS_H
 #define KPM_V2_03_INFORMATION_ELEMENTS_H
+#ifndef KPM_DATA_IE_H
+#define KPM_DATA_IE_H
+
+#include <stdint.h>
 
 #include "kpm_data_ie/kpm_ric_info/kpm_ran_function_def.h"
 #include "kpm_data_ie/kpm_ric_info/kpm_ric_event_trigger_def.h"
@@ -47,4 +51,13 @@ typedef struct {
     kpm_ran_function_def_t ran_func_def;
 } kpm_e2_setup_t;
 
+// Debugging KPM to SQLite DB
+// Define the kpm_meas_report_per_ue_t structure
+typedef struct {
+    int field1; // Replace with actual fields
+    int field2; // Replace with actual fields
+    // Add other fields as necessary
+} kpm_meas_report_per_ue_t;
+
+#endif // KPM_DATA_IE_H
 #endif // KPM_V2_03_INFORMATION_ELEMENTS_H
